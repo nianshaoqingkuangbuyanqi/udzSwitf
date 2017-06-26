@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UBMainVCL.swift
 //  udzbuyer
 //
 //  Created by mayibailing1 on 2017/6/26.
@@ -8,19 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UBMainVCL: UBBaseVCL {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        print(111);
+        
+        //设置title 
+        self.title = "首页"
+        
+        self.view.backgroundColor = UIColor.red
+        
+        // Do any additional setup a
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-
