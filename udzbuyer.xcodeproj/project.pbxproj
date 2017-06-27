@@ -10,12 +10,16 @@
 		1E7606A91F010C3600F15B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7606A81F010C3600F15B51 /* Assets.xcassets */; };
 		1E7606AC1F010C3600F15B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7606AA1F010C3600F15B51 /* LaunchScreen.storyboard */; };
 		1E7606B41F01128B00F15B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606B31F01128B00F15B51 /* AppDelegate.swift */; };
-		1E7606BA1F01143A00F15B51 /* UBBaseVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606B91F01143A00F15B51 /* UBBaseVCL.swift */; };
-		1E7606C21F01157D00F15B51 /* UBMainVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606C11F01157D00F15B51 /* UBMainVCL.swift */; };
+		1E7606C21F01157D00F15B51 /* UBIndexVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606C11F01157D00F15B51 /* UBIndexVCL.swift */; };
 		1E7606C41F01199200F15B51 /* UBHomeTabbarVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606C31F01199200F15B51 /* UBHomeTabbarVCL.swift */; };
-		1E7606CA1F011C2300F15B51 /* UBBaseNCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606C91F011C2300F15B51 /* UBBaseNCL.swift */; };
-		1E7606CC1F011C4B00F15B51 /* UBBaseTCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606CB1F011C4B00F15B51 /* UBBaseTCL.swift */; };
-		2DC1AB384109B992E2EE01B1 /* libPods-udzbuyer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711DF29DB11CEA5E0F5E84BE /* libPods-udzbuyer.a */; };
+		1E775FD51F01F377006CAA9E /* UBOriginalityCommunityVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FD41F01F377006CAA9E /* UBOriginalityCommunityVCL.swift */; };
+		1E775FD71F01F652006CAA9E /* UBShoppingCartVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FD61F01F652006CAA9E /* UBShoppingCartVCL.swift */; };
+		1E775FDA1F01F801006CAA9E /* UBMineVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FD91F01F801006CAA9E /* UBMineVCL.swift */; };
+		1E775FE01F020033006CAA9E /* UBBaseNCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FDD1F020033006CAA9E /* UBBaseNCL.swift */; };
+		1E775FE11F020033006CAA9E /* UBBaseTCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FDE1F020033006CAA9E /* UBBaseTCL.swift */; };
+		1E775FE21F020033006CAA9E /* UBBaseVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FDF1F020033006CAA9E /* UBBaseVCL.swift */; };
+		1E775FE81F0206F6006CAA9E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FE71F0206F6006CAA9E /* Common.swift */; };
+		5F5F81A6C3B9723EFFC06C38 /* Pods_udzbuyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3766F41DEEEF76D7CA4F7F /* Pods_udzbuyer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +29,16 @@
 		1E7606AB1F010C3600F15B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E7606AD1F010C3600F15B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = udzbuyer/Info.plist; sourceTree = "<group>"; };
 		1E7606B31F01128B00F15B51 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E7606B91F01143A00F15B51 /* UBBaseVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseVCL.swift; path = Source/Common/UBBaseVCL.swift; sourceTree = "<group>"; };
-		1E7606C11F01157D00F15B51 /* UBMainVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBMainVCL.swift; path = Source/Main/UBMainVCL.swift; sourceTree = "<group>"; };
+		1E7606C11F01157D00F15B51 /* UBIndexVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBIndexVCL.swift; path = Source/Main/UBIndexVCL.swift; sourceTree = "<group>"; };
 		1E7606C31F01199200F15B51 /* UBHomeTabbarVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBHomeTabbarVCL.swift; path = Source/Main/UBHomeTabbarVCL.swift; sourceTree = "<group>"; };
-		1E7606C91F011C2300F15B51 /* UBBaseNCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseNCL.swift; path = Source/Common/UBBaseNCL.swift; sourceTree = "<group>"; };
-		1E7606CB1F011C4B00F15B51 /* UBBaseTCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseTCL.swift; path = Source/Common/UBBaseTCL.swift; sourceTree = "<group>"; };
-		711DF29DB11CEA5E0F5E84BE /* libPods-udzbuyer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-udzbuyer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E775FD41F01F377006CAA9E /* UBOriginalityCommunityVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBOriginalityCommunityVCL.swift; path = Source/OriginalityCommunity/UBOriginalityCommunityVCL.swift; sourceTree = "<group>"; };
+		1E775FD61F01F652006CAA9E /* UBShoppingCartVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBShoppingCartVCL.swift; path = Source/ShoppingCart/UBShoppingCartVCL.swift; sourceTree = "<group>"; };
+		1E775FD91F01F801006CAA9E /* UBMineVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBMineVCL.swift; path = Source/Mine/UBMineVCL.swift; sourceTree = "<group>"; };
+		1E775FDD1F020033006CAA9E /* UBBaseNCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseNCL.swift; path = Source/Common/Controller/UBBaseNCL.swift; sourceTree = "<group>"; };
+		1E775FDE1F020033006CAA9E /* UBBaseTCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseTCL.swift; path = Source/Common/Controller/UBBaseTCL.swift; sourceTree = "<group>"; };
+		1E775FDF1F020033006CAA9E /* UBBaseVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseVCL.swift; path = Source/Common/Controller/UBBaseVCL.swift; sourceTree = "<group>"; };
+		1E775FE71F0206F6006CAA9E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Source/Common/Define/Common.swift; sourceTree = "<group>"; };
+		2F3766F41DEEEF76D7CA4F7F /* Pods_udzbuyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_udzbuyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980D4BA65EAFA9B330A61B2F /* Pods-udzbuyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udzbuyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-udzbuyer/Pods-udzbuyer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC1AB384109B992E2EE01B1 /* libPods-udzbuyer.a in Frameworks */,
+				5F5F81A6C3B9723EFFC06C38 /* Pods_udzbuyer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				1E7606C01F01153F00F15B51 /* Main */,
+				1E775FD31F01F344006CAA9E /* OriginalityCommunity */,
+				1E775FD81F01F657006CAA9E /* ShoppingCart */,
+				1E775FDB1F01F806006CAA9E /* Mine */,
 				1E7606BC1F01146C00F15B51 /* Common */,
 			);
 			name = Source;
@@ -88,9 +99,8 @@
 		1E7606BC1F01146C00F15B51 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				1E7606B91F01143A00F15B51 /* UBBaseVCL.swift */,
-				1E7606CB1F011C4B00F15B51 /* UBBaseTCL.swift */,
-				1E7606C91F011C2300F15B51 /* UBBaseNCL.swift */,
+				1E775FE31F020054006CAA9E /* Define */,
+				1E775FDC1F01FFF6006CAA9E /* Controller */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -108,15 +118,57 @@
 			isa = PBXGroup;
 			children = (
 				1E7606C31F01199200F15B51 /* UBHomeTabbarVCL.swift */,
-				1E7606C11F01157D00F15B51 /* UBMainVCL.swift */,
+				1E7606C11F01157D00F15B51 /* UBIndexVCL.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		1E775FD31F01F344006CAA9E /* OriginalityCommunity */ = {
+			isa = PBXGroup;
+			children = (
+				1E775FD41F01F377006CAA9E /* UBOriginalityCommunityVCL.swift */,
+			);
+			name = OriginalityCommunity;
+			sourceTree = "<group>";
+		};
+		1E775FD81F01F657006CAA9E /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				1E775FD61F01F652006CAA9E /* UBShoppingCartVCL.swift */,
+			);
+			name = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		1E775FDB1F01F806006CAA9E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				1E775FD91F01F801006CAA9E /* UBMineVCL.swift */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		1E775FDC1F01FFF6006CAA9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E775FDD1F020033006CAA9E /* UBBaseNCL.swift */,
+				1E775FDE1F020033006CAA9E /* UBBaseTCL.swift */,
+				1E775FDF1F020033006CAA9E /* UBBaseVCL.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1E775FE31F020054006CAA9E /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				1E775FE71F0206F6006CAA9E /* Common.swift */,
+			);
+			name = Define;
 			sourceTree = "<group>";
 		};
 		358A17571ABB2A5C41470392 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				711DF29DB11CEA5E0F5E84BE /* libPods-udzbuyer.a */,
+				2F3766F41DEEEF76D7CA4F7F /* Pods_udzbuyer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,12 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E775FE01F020033006CAA9E /* UBBaseNCL.swift in Sources */,
+				1E775FD71F01F652006CAA9E /* UBShoppingCartVCL.swift in Sources */,
 				1E7606B41F01128B00F15B51 /* AppDelegate.swift in Sources */,
-				1E7606CC1F011C4B00F15B51 /* UBBaseTCL.swift in Sources */,
 				1E7606C41F01199200F15B51 /* UBHomeTabbarVCL.swift in Sources */,
-				1E7606BA1F01143A00F15B51 /* UBBaseVCL.swift in Sources */,
-				1E7606C21F01157D00F15B51 /* UBMainVCL.swift in Sources */,
-				1E7606CA1F011C2300F15B51 /* UBBaseNCL.swift in Sources */,
+				1E7606C21F01157D00F15B51 /* UBIndexVCL.swift in Sources */,
+				1E775FE81F0206F6006CAA9E /* Common.swift in Sources */,
+				1E775FE21F020033006CAA9E /* UBBaseVCL.swift in Sources */,
+				1E775FD51F01F377006CAA9E /* UBOriginalityCommunityVCL.swift in Sources */,
+				1E775FDA1F01F801006CAA9E /* UBMineVCL.swift in Sources */,
+				1E775FE11F020033006CAA9E /* UBBaseTCL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
