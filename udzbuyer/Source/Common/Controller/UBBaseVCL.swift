@@ -16,6 +16,9 @@ class UBBaseVCL: UIViewController {
         //设置背景颜色
         self.view.backgroundColor = COLOR_BACKGROUND
         
+        //自动调整页面位置关闭
+        self.automaticallyAdjustsScrollViewInsets = false
+        
     }
 
     override func didReceiveMemoryWarning() {

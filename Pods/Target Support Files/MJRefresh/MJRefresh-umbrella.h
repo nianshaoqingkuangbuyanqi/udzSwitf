@@ -26,7 +26,6 @@
 #import "MJRefreshStateHeader.h"
 #import "MJRefresh.h"
 #import "MJRefreshConst.h"
-#import "NSBundle+MJRefresh.h"
 #import "UIScrollView+MJExtension.h"
 #import "UIScrollView+MJRefresh.h"
 #import "UIView+MJExtension.h"

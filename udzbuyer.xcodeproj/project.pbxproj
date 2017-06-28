@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E25783B1F03932E0053B741 /* UBGoodDetailVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E25783A1F03932E0053B741 /* UBGoodDetailVCL.swift */; };
 		1E7606A91F010C3600F15B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7606A81F010C3600F15B51 /* Assets.xcassets */; };
 		1E7606AC1F010C3600F15B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E7606AA1F010C3600F15B51 /* LaunchScreen.storyboard */; };
 		1E7606B41F01128B00F15B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7606B31F01128B00F15B51 /* AppDelegate.swift */; };
@@ -19,11 +20,14 @@
 		1E775FE11F020033006CAA9E /* UBBaseTCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FDE1F020033006CAA9E /* UBBaseTCL.swift */; };
 		1E775FE21F020033006CAA9E /* UBBaseVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FDF1F020033006CAA9E /* UBBaseVCL.swift */; };
 		1E775FE81F0206F6006CAA9E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FE71F0206F6006CAA9E /* Common.swift */; };
+		1E775FEF1F02432E006CAA9E /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E775FEE1F02432E006CAA9E /* HttpRequest.swift */; };
 		5F5F81A6C3B9723EFFC06C38 /* Pods_udzbuyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3766F41DEEEF76D7CA4F7F /* Pods_udzbuyer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		178BFED28C4D28758B9927E2 /* Pods-udzbuyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udzbuyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-udzbuyer/Pods-udzbuyer.debug.xcconfig"; sourceTree = "<group>"; };
+		1E2578371F03792F0053B741 /* udzbuyer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "udzbuyer-Bridging-Header.h"; path = "Source/SwiftOcBridge/udzbuyer-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E25783A1F03932E0053B741 /* UBGoodDetailVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBGoodDetailVCL.swift; path = Source/Main/UBGoodDetailVCL.swift; sourceTree = "<group>"; };
 		1E76069E1F010C3600F15B51 /* udzbuyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = udzbuyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7606A81F010C3600F15B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E7606AB1F010C3600F15B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 		1E775FDE1F020033006CAA9E /* UBBaseTCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseTCL.swift; path = Source/Common/Controller/UBBaseTCL.swift; sourceTree = "<group>"; };
 		1E775FDF1F020033006CAA9E /* UBBaseVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UBBaseVCL.swift; path = Source/Common/Controller/UBBaseVCL.swift; sourceTree = "<group>"; };
 		1E775FE71F0206F6006CAA9E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Source/Common/Define/Common.swift; sourceTree = "<group>"; };
+		1E775FEE1F02432E006CAA9E /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = Source/Common/Define/HttpRequest.swift; sourceTree = "<group>"; };
 		2F3766F41DEEEF76D7CA4F7F /* Pods_udzbuyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_udzbuyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980D4BA65EAFA9B330A61B2F /* Pods-udzbuyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udzbuyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-udzbuyer/Pods-udzbuyer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E25782F1F035CBB0053B741 /* SwiftOcBridge */ = {
+			isa = PBXGroup;
+			children = (
+				1E2578371F03792F0053B741 /* udzbuyer-Bridging-Header.h */,
+			);
+			name = SwiftOcBridge;
+			sourceTree = "<group>";
+		};
 		1E7606951F010C3600F15B51 = {
 			isa = PBXGroup;
 			children = (
@@ -87,11 +100,13 @@
 		1E7606BB1F01145E00F15B51 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1E25782F1F035CBB0053B741 /* SwiftOcBridge */,
 				1E7606C01F01153F00F15B51 /* Main */,
 				1E775FD31F01F344006CAA9E /* OriginalityCommunity */,
 				1E775FD81F01F657006CAA9E /* ShoppingCart */,
 				1E775FDB1F01F806006CAA9E /* Mine */,
 				1E7606BC1F01146C00F15B51 /* Common */,
+				1E775FE91F024295006CAA9E /* Third */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -119,6 +134,7 @@
 			children = (
 				1E7606C31F01199200F15B51 /* UBHomeTabbarVCL.swift */,
 				1E7606C11F01157D00F15B51 /* UBIndexVCL.swift */,
+				1E25783A1F03932E0053B741 /* UBGoodDetailVCL.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -161,8 +177,16 @@
 			isa = PBXGroup;
 			children = (
 				1E775FE71F0206F6006CAA9E /* Common.swift */,
+				1E775FEE1F02432E006CAA9E /* HttpRequest.swift */,
 			);
 			name = Define;
+			sourceTree = "<group>";
+		};
+		1E775FE91F024295006CAA9E /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Third;
 			sourceTree = "<group>";
 		};
 		358A17571ABB2A5C41470392 /* Frameworks */ = {
@@ -309,8 +333,10 @@
 				1E7606B41F01128B00F15B51 /* AppDelegate.swift in Sources */,
 				1E7606C41F01199200F15B51 /* UBHomeTabbarVCL.swift in Sources */,
 				1E7606C21F01157D00F15B51 /* UBIndexVCL.swift in Sources */,
+				1E775FEF1F02432E006CAA9E /* HttpRequest.swift in Sources */,
 				1E775FE81F0206F6006CAA9E /* Common.swift in Sources */,
 				1E775FE21F020033006CAA9E /* UBBaseVCL.swift in Sources */,
+				1E25783B1F03932E0053B741 /* UBGoodDetailVCL.swift in Sources */,
 				1E775FD51F01F377006CAA9E /* UBOriginalityCommunityVCL.swift in Sources */,
 				1E775FDA1F01F801006CAA9E /* UBMineVCL.swift in Sources */,
 				1E775FE11F020033006CAA9E /* UBBaseTCL.swift in Sources */,
@@ -431,10 +457,16 @@
 			baseConfigurationReference = 178BFED28C4D28758B9927E2 /* Pods-udzbuyer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/udzbuyer",
+					"$(PROJECT_DIR)/udzbuyer/Source/Third",
+				);
 				INFOPLIST_FILE = udzbuyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayi121.udzbuyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -444,10 +476,16 @@
 			baseConfigurationReference = 980D4BA65EAFA9B330A61B2F /* Pods-udzbuyer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/udzbuyer",
+					"$(PROJECT_DIR)/udzbuyer/Source/Third",
+				);
 				INFOPLIST_FILE = udzbuyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayi121.udzbuyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

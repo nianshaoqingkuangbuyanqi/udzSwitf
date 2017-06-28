@@ -31,3 +31,5 @@ let SCREEN_WIDTH:CGFloat = UIScreen.main.bounds.size.width
 let NAVBAR_HEIGHT:CGFloat = 64.0
 //tabbar高度
 let TABBAR_HEIGHT:CGFloat = 49.0
+//状态栏高度 
+let STATUS_BAR_HEIGHT:CGFloat = 20.0
