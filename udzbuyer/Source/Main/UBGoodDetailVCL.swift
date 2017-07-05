@@ -13,7 +13,11 @@ class UBGoodDetailVCL: UBBaseVCL {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //设置title
+        self.title = "商品详情"
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

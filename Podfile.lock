@@ -5,19 +5,22 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - WebViewJavascriptBridge (6.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4.0)
   - MBProgressHUD (~> 0.8)
   - MJRefresh (~> 3.0.2)
   - SDWebImage (~> 3.8.2)
+  - WebViewJavascriptBridge (~> 6.0.2)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
 
-PODFILE CHECKSUM: 99d5af3d1ba90776d85618fe870b2af1b15c793f
+PODFILE CHECKSUM: 3892ce572b8eec3be7b14897a5a8662b11f93cbe
 
 COCOAPODS: 1.2.1
