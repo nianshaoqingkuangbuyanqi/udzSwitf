@@ -28,5 +28,7 @@ let SEVER_INDEX = "http://m.udz.com"
 let SEVER_HOST = "http://appapi.udz.com"
     
 #endif
+//社区首页
+let COMMUNITY_HOME = "\(SEVER_HOST)/_snsindex"
 
 

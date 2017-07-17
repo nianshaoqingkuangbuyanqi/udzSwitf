@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class UBBaseVCL: UIViewController {
+    
+    var param:[String:AnyObject]? //用于页面间传值
+    var pageSize = 20 //每页请求20条数据
+    var currentPage = 1 //默认第一页
     
     override func viewDidLoad() {
         super.viewDidLoad()

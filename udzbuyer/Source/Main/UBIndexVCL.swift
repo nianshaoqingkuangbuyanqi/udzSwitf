@@ -8,11 +8,12 @@
 
 import UIKit
 import MJRefresh
+import WebViewJavascriptBridge
 
 class UBIndexVCL: UBBaseVCL,UIWebViewDelegate {
 
     var webview:UIWebView!
-    var refreshControl:UIRefreshControl!
+    var bridge:WebViewJavascriptBridge!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +26,9 @@ class UBIndexVCL: UBBaseVCL,UIWebViewDelegate {
         //加载webview
         webview.scrollView.mj_header.beginRefreshing()
         
+        //为webview注册和JS交互事件
+        registerHandleWebviewWithJS()
+        
         // Do any additional setup a
     }
 
@@ -36,6 +40,13 @@ class UBIndexVCL: UBBaseVCL,UIWebViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController!.isNavigationBarHidden = true
+        //为webview添加useragent 
+        addUserAgentForWebview()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController!.isNavigationBarHidden = false
     }
     
     //MARK: 初始化webview
@@ -56,13 +67,75 @@ class UBIndexVCL: UBBaseVCL,UIWebViewDelegate {
         })
     }
     
+    //MARK: 为webview注册和JS交互事件
+    func registerHandleWebviewWithJS() -> Void {
+        
+        bridge = WebViewJavascriptBridge.init(forWebView: webview)
+        bridge.setWebViewDelegate(self)
+        bridge.registerHandler("openProduct") { ( data, responseback) in
+            
+            print(data ?? "这难道是空？")
+            
+            let dic:[String:AnyObject] = data as! [String : AnyObject]
+            let detail = UBGoodDetailVCL()
+            detail.param!["id"] = dic["id"]
+            self.navigationController?.pushViewController(detail, animated: true)
+        }
+        
+        //注册搜索
+        bridge.registerHandler("search") { (data, responseCallBack) in
+            
+        }
+    }
+    
+    //MARK: webview 代理事件
     func webViewDidFinishLoad(_ webView: UIWebView) {
         webview.scrollView.mj_header.endRefreshing()
+        
     }
 
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         webview.scrollView.mj_header.endRefreshing()
     }
+    
+    
+    //MARK: 为webview添加useragent
+    func addUserAgentForWebview() {
+        let webview = UIWebView.init()
+        //获取oldagent
+        let oldAgent = webview.stringByEvaluatingJavaScript(from: "navigator.userAgent")
+        
+        //循环old agent 中的每个值
+        let oldFiled = oldAgent?.components(separatedBy: " ")
+        var newAgent:String! = ""
+        var index = 0
+        while index < oldFiled!.count {
+            if index == 0 {
+                newAgent.append(oldFiled![index])
+            } else {
+                newAgent.append(" \(oldFiled![index])")
+            }
+            index += 1;
+        }
+        
+        let dm = UBDataModelSigleTon.init()
+        
+        //添加appToken
+        if (dm.staticData.appToken?.characters.count) ?? 0 > 0 {
+            newAgent.append(" appToken\(dm.staticData.appToken!)")
+        }
+        
+        //添加deviceId
+        newAgent.append(" deviceId\(dm.uuid)")
+        
+        //添加udzbuyer 标识
+        newAgent.append(" udzbuyer")
+        
+        //register new agent
+        let dictionary = ["UserAgent":newAgent]
+        UserDefaults.standard.register(defaults: dictionary as [String:AnyObject])
+    }
+    
     
 }
 
